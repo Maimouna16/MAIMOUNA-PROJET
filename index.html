@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="bootstrap-4.6.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.3.0-web/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title></title>
+</head>
+<body>
+    
+    
+    <div id="container">
+        <div class="col1">  
+            <input type="text" class="field" placeholder="enter your name">
+            <input type="email" class="field" placeholder=" enter a valid email address">
+            <input type="phone" class="field" placeholder="enter your phone (e.g+141555)">
+             <textarea class="field are"></textarea>
+            <button class="btn">soumettre</button>
+        </div>
+        <div class="col2">
+            
+            <h4>appelez-nous</h4>
+                <p>1(234)567-891<br>
+                1(234)987-654<br></p>
+            
+            <h4>emplacements</h4>
+               <p>123 Rock  sreet,21<br>
+                Avenue,<br>
+                New York,NY 92103-<br>
+                9000<br>
+            </p>
+            <h4>meilleur et services</h4>
+               <p> transfers locaux<br>
+                transfers aeroport<br>
+                Excusions et visites<br>
+    </p>
+        </div>   
+            <div class="col3">
+            <div class="text-right"></div>
+                           <img src="maimouna.png">
+        
+        </div>
+               </div>
+
+               
+       
+     
+</body>
+
+
+
+
+
+
+
+<style>
+    body{
+        margin: 10px;
+        
+        font-family: sans-serif;
+        background-color:rgb(255, 233, 233);
+    }
+#container{
+    width:800px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns: repeat(auto-fit,
+    minmax(150px, 1fr));
+    grid-gap:3px;
+}
+    .col1, .col2, .col3{
+        width: 280px;
+        float: left;
+        margin:90px;
+        height: 100px;
+        text-align: justify;
+        min-width:250px;
+    }
+    .col1 {
+        width: 380px;
+        float:center;
+        margin:20px;
+        border-radius: 2px;
+        min-width:150px;
+        margin-bottom: 250px;
+        padding-right: 1px;
+    }
+      .col2{
+        height: 100%;
+        min-width:250px;
+        margin-left: 85%;
+        margin-top:16px ;
+      }  
+       .col2 h4{
+        color:#5e2b2b;
+        margin-top: 8px;  
+    }
+    .col3{
+        height: 100%;
+        min-width:150px;
+        width: 380px;
+    }
+    .col3 img{
+        height: 60%;
+        padding-left: 20%;
+        margin-right: 100%;
+        min-width:250px;
+        margin-top: 1px;
+        
+}     
+ .field{
+        width: 100%;
+        padding: 0.5rem 1rem;
+        outline:none;
+        border:2px solid rgba(0, 0, 0, 0);
+        background-color: whitesmoke;
+        font-size: 1.1reem;
+        margin-bottom: 22px;
+        transition: .3s;
+        height: 2%;
+    }
+    .btn{
+        width: 100%;
+        padding:0.5rem 1rem;
+        font-size:1,1rem;
+        background-color: rgb(48, 10, 29);
+        cursor:pointer;
+        outline:none;
+        border: none;
+        color:#fff;
+        transition: .3s;
+        border-radius:2px ;
+    }
+    .are{
+        min-height: 150px;
+        margin:10px;
+        
+        min-width: 150px;
+        border-radius: 2px;
+    }
+    
+    .btn:hover{
+
+        border-radius:2% ;
+
+    }
+
+     
+    
+    /*max-width, si l'ecran est inf ou egal alors {...} */
+    /*max-width=desktop-first*/
+    @media screen and(max-width:425px){
+        .container{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+    }
+        @media screen and(max-width:760px){
+            .container{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    
+    /*max-width, si l'ecran est inf ou egal alors {...} */
+    /*max-width=phones-first*/
+    @media screen and(max-width:480px){
+        .container{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+    }
+        @media screen and(max-width:620px){
+            .container{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    
+    
+
+     
+    
+    /*max-width, si l'ecran est inf ou egal alors {...} */
+    /*max-width=tablets-first*/
+    @media screen and(max-width:620px){
+        .container{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+    }
+        @media screen and(max-width:768px){
+            .container{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    
+    
+    /*max-width, si l'ecran est inf ou egal alors {...} */
+    /*max-width=laptops-first*/
+    @media screen and(max-width:768px){
+        .container{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+    }
+        @media screen and(max-width:1060px){
+            .container{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    
+    
+
+    
+
+</style>
